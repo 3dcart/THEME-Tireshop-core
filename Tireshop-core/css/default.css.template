@@ -113,7 +113,7 @@ body {
   flex-direction: column;
   background: #000000;
   color: #fff !important;
-	font-size:14px;
+	font-size:[base_font_size]px;
 }
 a {
     color: #fff !important;
@@ -131,10 +131,10 @@ body {
     line-height: 1.5;
 }
 h1 {
-    font-size: 30px;
+    font-size: [heading_base_size]px;
 }
 .product-item .on-sale-badge{
-	background:#d04b64;
+	background:#[sale_text_bg];
 }
 .titles {
     margin: 0 0 20px;
@@ -248,21 +248,21 @@ h1 {
 }
 .btn-default.btn-inverse,
 .btn-primary {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-    border: 1px solid #fff;
+    color: #[btn_text_color] !important;
+    background-color: #[btn_bg_color];
+    border-color: #[btn_border];
+    border: 1px solid #[btn_border];
 }
 .btn-default.btn-inverse:hover,
 .btn-primary:hover {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-    border: 1px solid #fff;
+    color: #[btn2_text_color] !important;
+    background-color: #[btn2_color];
+    border-color: #[btn2_border];
+    border: 1px solid #[btn2_border];
     opacity: 0.8;
 }
 .navbar-wrapper {
-    background: #1b1b1b;
+    background: #[nav_bg_color];
 }
 .navbar-nav {
     float: none;
@@ -280,7 +280,7 @@ h1 {
     display: inline-block;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #[nav_text_color] !important;
     font-weight: 300;
     letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -373,7 +373,7 @@ h1 {
     opacity: 0.6;
 }
 .top-nav {
-	background: #000;
+	background: #[header_bg_color];
 }
 .top-nav hr.header-top {
     border-top: 10px solid #1c1c1c;
@@ -412,14 +412,14 @@ h1 {
     padding: 0;
 }
 .top-nav ul li a {
-    color: #fff !important;
+    color: #[header_text_color] !important;
     font-size: 18px;
     font-weight: 300;
     text-transform: capitalize;
     text-decoration: none;
 }
 .top-nav ul li a:hover {
-    color: #d72204 !important;
+    color: #[header_text_color] !important;
 }
 .useraccount ul {
     padding: 0;
@@ -427,19 +427,21 @@ h1 {
     list-style: none;
 }
 .useraccount ul li {
-    color: #fff;
+    color: #[header_text_color];
 }
 .useraccount ul li a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #[header_text_color];
 }
 .useraccount ul li a.sublink {
-    color: #d72204 !important;
+    color: #[header_text_color] !important;
 }
-
+.useraccount a{
+	color: #[header_text_color] !important;
+}
 .site-header {
     padding: 15px 0 50px;
-	background: #000;
+	background: #[header_bg_color];
 }
 
 .searchBox {
@@ -490,7 +492,7 @@ h1 {
     font-size: 16px;
     font-weight: 300;
     text-transform: capitalize;
-    color: #d72204 !important;
+    color: #[header_text_color] !important;
     line-height: 1;
 }
 .minicart-inner:hover {
@@ -518,7 +520,7 @@ span.cart-title {
     font-weight: bold;
 }
 span.cart-count {
-    color: #fff;
+    color: #[header_text_color];
     font-size: inherit;
     display: inline-block;
     line-height: 1;
@@ -526,9 +528,9 @@ span.cart-count {
     padding: 0 5px 0 0;
 }
 .site-footer {
-    background-color: #0f0f0f;
+    background-color: #[footer_bg_color];
     padding: 0;
-    color: #fff;
+    color: #[footer_text_color];
     font-family: 'Oswald', sans-serif;
 }
 .footer-holder {
@@ -541,15 +543,12 @@ ul.extrapages li {
     margin: 0 0 15px;
 }
 ul.extrapages li a {
-    color: #fff;
+    color: #[footer_text_color] !important;
     font-size: 20px;
     font-weight: 300;
 }
 ul.extrapages li a:hover {
     color: #d72204 !important;
-}
-.useraccount a{
-	color: #fff !important;
 }
 .footer-social {
     border-top: 2px solid #868686;
@@ -574,7 +573,7 @@ ul.extrapages li a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
-    color: #fff;
+    color: #[footer_text_color];
     font-size: 12px;
     font-weight: 300;
 }
@@ -584,7 +583,7 @@ ul.extrapages li a:hover {
     margin: 0;
 }
 .copyright a {
-    color: #aaa;
+    color: #[footer_text_color] !important;
     text-decoration: underline;
 }
 #divRewardWidget {
@@ -613,8 +612,8 @@ ul.extrapages li a:hover {
     margin: 0 0 15px;
 }
 .mailinglist-submit {
-    background-color: #d72204;
-    color: #fff !important;
+    background-color: #[btn_bg_color];
+    color: #[btn_text_color] !important;
     border: none;
     float: right;
     width: 105px;
@@ -650,7 +649,7 @@ ul.extrapages li a:hover {
     line-height: 13px;
     font-weight: 300;
     margin-left: 3px;
-    color: #ccc;
+    color: #[footer_text_color];
     cursor: pointer;
 }
 
@@ -713,7 +712,7 @@ ul.social-icons li.social-icons-label {
 .rating:hover .rating-star:hover ~ .rating-star,
 .rating-input:checked ~ .rating-star,
 .reviews-stars {
-    color: #000;
+    color: #[stars_color];
 }
 .product-holder {
     background: #fff;
@@ -818,7 +817,7 @@ body.checkout-1 {
     margin: 0 0 25px;
     border-bottom: 1px solid #ececec;
     position: relative;
-	color: #fff;
+	color: #[headings_color];
 }
 .products-section h2:after {
     content: "";
