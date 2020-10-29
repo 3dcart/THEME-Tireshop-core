@@ -22,6 +22,22 @@ body#quickView {
     background: transparent;
     color: #000;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor,
 #rTabs .item,
 #myaccount .button.pull-right a,
@@ -134,7 +150,8 @@ h1 {
     font-size: 30px;
 }
 .product-item .on-sale-badge{
-	background:#d04b64;
+	background:#DF8190;
+	color: #080808;
 }
 .titles {
     margin: 0 0 20px;
@@ -434,7 +451,7 @@ h1 {
     color: #fff;
 }
 .useraccount ul li a.sublink {
-    color: #d72204 !important;
+    color: #FC6D54 !important;
 }
 
 .site-header {
@@ -490,7 +507,7 @@ h1 {
     font-size: 16px;
     font-weight: 300;
     text-transform: capitalize;
-    color: #d72204 !important;
+    color: #FC6D54 !important;
     line-height: 1;
 }
 .minicart-inner:hover {
@@ -805,11 +822,11 @@ span.freeshipping {
 body.checkout-1 {
 	background: #fff;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
@@ -820,7 +837,7 @@ body.checkout-1 {
     position: relative;
 	color: #fff;
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: "";
     height: 1px;
     background-color: #000;

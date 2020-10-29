@@ -22,6 +22,22 @@ body#quickView {
     background: transparent;
     color: #000;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor,
 #rTabs .item,
 #myaccount .button.pull-right a,
@@ -135,6 +151,7 @@ h1 {
 }
 .product-item .on-sale-badge{
 	background:#[sale_text_bg];
+	color: #080808;
 }
 .titles {
     margin: 0 0 20px;
@@ -804,11 +821,11 @@ span.freeshipping {
 body.checkout-1 {
 	background: #fff;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
@@ -819,7 +836,7 @@ body.checkout-1 {
     position: relative;
 	color: #[headings_color];
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: "";
     height: 1px;
     background-color: #000;
