@@ -57,7 +57,9 @@ height:auto;
 .checkout-options-title>span {
     color: #000 !important;
 }
-
+.modal {
+    color: #000 !important;
+}
 section#message p.notice, section#error p.notice,
 #category .subcategories > ul > li span.name,
 .breadcrumnb ol li>span, .breadcrumnb ol li:last-child>a {
